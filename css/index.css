@@ -1,0 +1,16 @@
+:root{
+    --background: #0F0B14;
+    --white: #fff;
+    --orange: #ED7E00;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    background-color: var(--background);
+}
