@@ -20,31 +20,35 @@ nav{
     justify-content: space-between;
     align-items: center;
     position: fixed;
-    padding: 12px 130px 0px;
+    padding: 0px 130px 0px;
     background-color: var(--background);
     height: 70px;
     width: 100%;
     box-shadow: 110px, 110px, 10px #0000002c;
 }
 nav img{
-    height: 50px;
+    height: 45px;
     cursor: pointer;
+    margin-top: 5px;
 }
 .nav_ul{
     display: flex;
+    align-items: center;
     background-color: #0F0B14;
     list-style: none;
 }
 .nav_ul_li{
     margin-left: 35px;
-    font-size: 2rem;
 }
 .nav_ul_li a{
+    font-size: 1.8rem;
     color: var(--white);
     text-decoration: none;
     font-weight: 300;
 }
+
 /*Section 1*/
+
 .section1{
     display: flex;
     flex-direction: column;
@@ -53,6 +57,9 @@ nav img{
     height: 100vh;
     width: 100vw;
     padding: 70px 130px 20px;
+    background-image: url(../img/estrella6.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .section1 h1{
     font-size: 14rem;
@@ -89,8 +96,47 @@ nav img{
     margin: 6px 0px;
     font-size: 2.2rem;
     font-weight: 200;
+    cursor: pointer;
+}
+.section1_ul_li:hover{
+    margin-right: 25px;
+    transition: .5s;
+}
+.section1_ul_li:hover > .bullet{
+    animation-name: rotation_item;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes rotation_item{
+    0%{
+        transform: rotate(360deg);
+    }
 }
 .bullet{
     height: 32px;
     margin-left: 30px;
+}
+.section1_div_social-media{
+    display: flex;
+    margin-right: 80px;
+    margin-top: 30px;
+    align-items: center;
+}
+.section1_div_social-media > img{
+    width: 30px;
+    margin-left: 20px;
+    cursor: pointer;
+    opacity: 40%;
+}
+.section1_div_social-media img:hover{
+    opacity: 100%;
+    transition: .4s;
+}
+.section1_div_social-media > p{
+    color: var(--white);
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    opacity: 50%;
 }
