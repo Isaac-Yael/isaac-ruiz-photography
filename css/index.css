@@ -224,14 +224,14 @@ body::-webkit-scrollbar-thumb{
     grid-area: button;
     padding: 10px 0;
     cursor: pointer;
+    color: var(--white);
+    font-weight: 500;
+    font-size: 1.6rem;
 }
 #portfolio_grid_8:hover{
     background-color: var(--white);
-}
-#portfolio_grid_8:hover .switch_portfolio{
     color: var(--background);
-    font-weight: 500;
-    transition: .1s;
+    font-weight: 600;
 }
 .section2 div{
     height: 100%;
